@@ -39,7 +39,8 @@ android {
 }
 
 dependencies {
-    parcelizeCompilerPlugin("org.jetbrains.kotlin:kotlin-parcelize-compiler:2.1.0")
+    parcelizeCompilerPlugin(libs.kotlinx.parcelize.compiler)
+    implementation(libs.kotlinx.parcelize.runtime)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

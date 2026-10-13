@@ -11,6 +11,8 @@ class CarFormActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_car_form)
 
-        val car = intent.getSerializableExtra("car")
+        val car = intent.getParcelableExtra<Car>("car")
+
+
     }
 }
