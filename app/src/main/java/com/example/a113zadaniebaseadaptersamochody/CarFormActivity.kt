@@ -1,0 +1,16 @@
+package com.example.a113zadaniebaseadaptersamochody
+
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class CarFormActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_car_form)
+
+        val car = intent.getSerializableExtra("car")
+    }
+}
